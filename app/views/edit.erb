@@ -1,6 +1,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -22,3 +23,12 @@
             <input type="submit" value="edit"/>
 
             </form>
+=======
+      <form action="/recipes/<%= @recipe.id %>" method="post">
+        <input id="hidden" type="hidden" name="_method" value="patch">
+        <input type="text" name="name">
+        <input type="text" name="ingredients">
+        <input type="integer" name="cook_time">
+        <input type="submit" value="submit">
+      </form>
+>>>>>>> fef8e2f91f60adaad4061266e754e9837a2c6d9f
